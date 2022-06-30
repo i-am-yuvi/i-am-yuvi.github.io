@@ -295,7 +295,7 @@ section .button button:hover{
   justify-content: space-between;
 }
 .skills-details .box{
-  width: calc(100% / 2 - 20px);
+  width: calc(100% / 1 - 20px);
   margin: 20px 0;
 }
 .skills-details .boxes .topic{
@@ -303,7 +303,7 @@ section .button button:hover{
   color: #4070f4;
 }
 .skills-details .boxes .box .per{
-  font-size: 10px;
+  font-size: 20px;
   color: #4070f4;
 }
 
