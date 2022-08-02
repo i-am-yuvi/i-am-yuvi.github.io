@@ -43,3 +43,8 @@ for (var i = 0; i < navLinks.length; i++) {
     menuBtn.style.pointerEvents = "auto";
   });
 }
+
+//Button to send email
+sendMail();{
+   window.location = "mailto:yuvichh01@gmail.com";
+}
