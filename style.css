@@ -129,12 +129,67 @@ nav.sticky .menu-btn{
   font-size: 25px;
   color: #0E2431;
 }
-.home .text-two{
+
+.home .text-two .static {
   color: #0E2431;
-  font-size: 75px;
-  font-weight: 600;
-  margin-left: -3px;
+  font-size: 80px;
+  font-weight: 500;
+  margin-left: 15px;
+  
 }
+
+.text-two{
+  display: flex;
+}
+
+.home .text-two .dynamic{
+  line-height: 90px;
+  height: 90px;
+  margin-left: 15px;
+  overflow: hidden;
+}
+
+
+.home .text-two .dynamic li{
+  list-style: none;
+  color: rgb(40, 97, 178);
+  font-size: 80px;
+  font-weight: 500;
+  margin-left: 10px;
+  position: relative;
+  top: 0;
+  animation: slide 25s steps(5) infinite;
+}
+
+@keyframes slide{
+  100%{
+    top: -450px;
+  }
+}
+
+.dynamic li::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: white;
+
+  width: 100%;
+  border-left: 3px solid white;
+  animation: typing 5s steps(38) infinite;
+}
+
+@keyframes typing{
+  40%,
+  60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+
 
 
 .home .text-three{
