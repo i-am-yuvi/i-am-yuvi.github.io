@@ -1,2 +1,3 @@
 # This is Yuvraj's portfolio website
-##Welcome here to my portfolio!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+## Welcome to my portfolio website
+## New contributors are welcome here
