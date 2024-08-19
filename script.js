@@ -11,7 +11,6 @@ window.onscroll = function() {
     nav.classList.remove("sticky");
     scrollBtn.style.display = "none";
   }
-
 }
 
 // Side NavIgation Menu JS Code
@@ -44,7 +43,50 @@ for (var i = 0; i < navLinks.length; i++) {
   });
 }
 
-//Button to send email
-sendMail();{
+// Button to send email
+function sendMail() {
    window.location = "mailto:yuvichh01@gmail.com";
 }
+
+// Blog functionality
+const blogs = [
+  { id: 1, title: "Running a Full Bitcoin Node", file: "/blogs/bitcoin-node.md" },
+  { id: 2, title: "Exploring DevOps", file: "/blogs/blog2.md" },
+  //add more here
+];
+
+function populateBlogList() {
+  const blogList = document.getElementById('blog-list');
+  blogList.innerHTML = ''; // Clear existing content
+  blogs.forEach(blog => {
+    const blogItem = document.createElement('div');
+    blogItem.innerHTML = `<h3><a href="#" onclick="loadBlog(${blog.id})">${blog.title}</a></h3>`;
+    blogList.appendChild(blogItem);
+  });
+}
+
+function loadBlog(id) {
+  const blog = blogs.find(b => b.id === id);
+  if (blog) {
+    fetch(`blogs/${blog.file}`)
+      .then(response => response.text())
+      .then(markdown => {
+        document.getElementById('blog-title').innerHTML = `<h2>${blog.title}</h2>`;
+        document.getElementById('blog-body').innerHTML = marked(markdown);
+        document.getElementById('blogs').style.display = 'none';
+        document.getElementById('blog-content').style.display = 'block';
+      })
+      .catch(error => {
+        console.error('Error loading blog post:', error);
+        alert('Failed to load blog post. Please try again later.');
+      });
+  }
+}
+
+function backToBlogList() {
+  document.getElementById('blogs').style.display = 'block';
+  document.getElementById('blog-content').style.display = 'none';
+}
+
+// Initialize blog list when the page loads
+window.addEventListener('load', populateBlogList);
