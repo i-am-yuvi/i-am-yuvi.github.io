@@ -1,173 +1,101 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <title> Yuvraj's Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Fontawesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+<html lang="en">
+
+<head>
+  <title>yuvic</title>
+  <meta charset="utf-8">
+  <base target="_blank">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+</head>
+
 <body>
-  <!-- Move to up button -->
-  <div class="scroll-button">
-    <a href="#home"><i class="fas fa-arrow-up"></i></a>
-  </div>
-  <!-- navgaition menu -->
-  <nav>
-    <div class="navbar">
-      <div class="logo"><a href="#">Portfolio.yuvic</a></div>
-      <ul class="menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="blogs.html">Blogs</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <div class="cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
-      </ul>
-      <div class="media-icons">
-        <a href="https://github.com/i-am-yuvi"><i class="fab fa-github"></i></a>
-        <a href="https://twitter.com/_i_m_yuvi"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/_i_m_yuv_/"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-    <div class="menu-btn">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
-
-<!-- Home Section -->
- <section class="home" id="home">
-   <div class="home-content">
-     <div class="text">
-       <div class="text-one">Hello,</div>
-       <ul class="text-two">
-         <div class="static">I'm</div>       
-         <ul class="dynamic">
-          <li><span>Yuvraj Chhetri</span></li>
-          <li><span>Bitcoin Core Contributor</span></li>
-          <li><span>Summer of Bitcoin '24 Intern</span></li>
-         </ul>
+  <div id="content">
+    <div id="right">
+      <div class="list">
+        <ul>
+          <li>
+            <a href="/" target="_self">home</a>
+          </li>
+          <li>
+            <a href="articles.html" target="_self">articles</a>
+          </li>
+          <li>
+            <a href="bitcoin.pdf" target="_self">bitcoin white paper</a>
+          </li>
+          <li>
+            <a href="contact" target="_self">contact</a>
+          </li>
+          <li>
+            <a href="donate" target="_self">donate</a>
+          </li>
+          <li>
+            &nbsp;
+          </li>
+          <li class="small">
+            style:<br>
+            <a href="https://basicbitch.software" class="small" target="_blank">basicbitch.software</a>
+          </li>
         </ul>
-       
-     </div>
-   </div>
- </section>
-
-<!--- About Section --->
-<section class="about" id="about">
-  <div class="content">
-    <div class="title"><span>About Me</span></div>
-  <div class="about-details">
-    <div class="left">
-      <img src="/assets/IMG_20211231_120652_123322.jpg" alt="">
+      </div>
+      <div class="namecap">
+        <a href="/" target="_self">&nbsp;yuvic&nbsp;</a>
+      </div>
     </div>
-    <div class="right">
-      <div class="topic">Developing and Collaborating is my passion</div>
-      <p>Developing stuffs has always been an interesting play for me. When you go deep dive into developing after gaining fundamentals you will learn more about the things going on. Collaboration is a key element in taking your practice to the next level. It is a powerful strategy — an often overlooked, yet easy practice that produces powerful results while increasing your leverage in today's world. </p>
-      <div class="button">
+
+    <div id="entry_block">
+      <div class="entry">
+        <div class="date">Last updated: 11 July 2024</div>
+        <div class="body">
+          <div>
+            <p>
+              I'm concerned about human rights and freedom, decentralization
+              of power, individual empowerment, privacy and self-sovereignty.
+            </p>
+            <p>
+              Bitcoin and open source software play a key part in striving for
+              these causes around the world that are increasingly important
+              every day.
+            </p>
+            <p>
+              Bitcoin isn't perfect. Among other things, it needs further
+              decentralization, continued vigilance, review, bug-fixing,
+              updates, maintenance, and improved robustness, performance,
+              privacy, scaling, documentation and user experience.
+            </p>
+            <p>
+              As a contributor to
+              <a href="https://github.com/bitcoin/bitcoin" target="_blank" rel="nofollow">Bitcoin Core</a>
+              since 2019 and
+              <a href="https://github.com/bitcoin/bips" target="_blank" rel="nofollow">BIPs</a>
+              maintainer since 2024, I pursue a long-term, evergreen role of help and
+              service, hopefully with a measure of kindness, wisdom and
+              forbearance.
+            </p>
+            <p>
+              My time is invested in reviewing and context-packing the changes
+              to these projects, observing the process closely, and reading or
+              reviewing most of the opened and merged pull requests.
+            </p>
+            <p>
+              The idea is to help move improvements forward, catch bugs
+              or breaking changes, and be able to help maintain the project.
+              I propose
+              <a href="https://github.com/bitcoin/bitcoin/commits?author=jonatack" target="_blank"
+                rel="nofollow">fixes</a>
+              to the
+              <a href="https://github.com/bitcoin/bitcoin/graphs/contributors" target="_blank" rel="nofollow">code</a>
+              as well.
+            </p>
+            <p>
+              See my <a href="./articles.html" target="_self">articles</a> for more
+              about contributing to and running Bitcoin Core.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-</section>
-
-<!-- My Skill Section Start -->
-<!-- Section Tag and Other Div will same where we need to put same CSS -->
-<section class="skills" id="skills">
- <div class="content">
-   <div class="title"><span>My Skills</span></div>
-   <div class="skills-details">
-     <div class="text">
-       <div class="topic">Skills Reflects Our Knowledge</div>
-       <p>Skills is an ability which is gained through practice and consistency. A person having skills reflects his/her knowledge in that field. If a person is good at dancing or singing, then it is their skill, he/she knows the theory behind moving legs and hands which is knowledge. </p>
-       
-     </div>
-     <div class="boxes">
-       <div class="box">
-         <div class="topic">DevOps</div>
-         <div class="per">K8's, CI/CD,etc.</div>
-       </div>
-       <div class="box">
-         <div class="topic">Cloud</div>
-         <div class="per">GCP, AWS, Azure</div>
-       </div>
-       <div class="box">
-         <div class="topic">GO</div>
-         
-       </div>
-       <div class="box">
-         <div class="topic">Android Development</div>
-         
-       </div>
-     </div>
-   </div>
- </div>
-</section>
-
-<!-- My Services Section Start -->
- <section class="services" id="services">
-   <div class="content">
-     <div class="title"><span>Want to Collaborate</span></div>
-     <div class="boxes">
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-desktop"></i>
-       </div>
-       <div class="topic">Cloud Computing</div>
-       <p>Aws, Civo, GCP, Digital Ocean, Terraform, etc</p>
-     </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fas fa-brain"></i>
-       </div>
-       <div class="topic">Open Source</div>
-       <p>Contributed to several projects including Kubernetes, Layer5, etc</p>
-     </div>
-       <div class="box">
-         <div class="icon">
-           <i class="fab fa-android"></i>
-       </div>
-       <div class="topic">DevOps</div>
-       <p>Kubernetes, CI/CD, Microservices, Containers</p>
-     </div>
-       <div class="box">
-         <div class="icon">
-          <i class="fas fa-desktop"></i>
-       </div>
-       <div class="topic">Golang Development</div>
-       <p>Built projects using Golang such as Webserver to serve pages, WebApps to store in database and retrieve.</p>
-     </div>
-       
-       
-   </div>
-   </div>
- </section>
-
-<!-- Contact Me section Start -->
-<section class="contact" id="contact">
-  <div class="content">
-    <div class="title"><span>Contact Me</span></div>
-    <div class="text">
-      <div class="topic">Have Any Project?</div>
-      <p></p>
-      <div class="button">
-        <button onclick="location.href='mailto:yuvichh01@gmail.com';">Email Me</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!--- Footer Section Start --->
-<footer>
-  <div class="text">
-    <span>&#169; 2021 All Rights Reserved</span>
-  </div>
-</footer>
-
-  <script src="script.js"></script>
 </body>
+
 </html>

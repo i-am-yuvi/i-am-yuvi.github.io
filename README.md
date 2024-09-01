@@ -1,3 +1,3 @@
-# This is Yuvraj's portfolio website
-## Welcome to my portfolio website
-## New contributors are welcome here ..
+# https://i-am-yuvi.github.io
+
+## website and blog
