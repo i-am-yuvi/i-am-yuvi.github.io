@@ -1,97 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>yuvic</title>
-  <meta charset="utf-8">
-  <base target="_blank">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-
-<body>
-  <div id="content">
-    <div id="right">
-      <div class="list">
-        <ul>
-          <li>
-            <a href="/" target="_self">home</a>
-          </li>
-          <li>
-            <a href="./articles.html" target="_self">articles</a>
-          </li>
-          <li>
-            <a href="./bitcoin.pdf" target="_self">bitcoin white paper</a>
-          </li>
-          <li>
-            <a href="./contact.html" target="_self">contact</a>
-          </li>
-          <li>
-            <a href="./donate.html" target="_self">donate</a>
-          </li>
-          <li>
-            &nbsp;
-          </li>
-        </ul>
-      </div>
-      <div class="namecap">
-        <a href="/" target="_self">&nbsp;yuvic&nbsp;</a>
-      </div>
-    </div>
-
-    <div id="entry_block">
-      <div class="entry">
-        <div class="date">Last updated: 11 July 2024</div>
-        <div class="body">
-          <div>
-            <p>
-              I'm concerned about human rights and freedom, decentralization
-              of power, individual empowerment, privacy and self-sovereignty.
-            </p>
-            <p>
-              Bitcoin and open source software play a key part in striving for
-              these causes around the world that are increasingly important
-              every day.
-            </p>
-            <p>
-              Bitcoin isn't perfect. Among other things, it needs further
-              decentralization, continued vigilance, review, bug-fixing,
-              updates, maintenance, and improved robustness, performance,
-              privacy, scaling, documentation and user experience.
-            </p>
-            <p>
-              As a contributor to
-              <a href="https://github.com/bitcoin/bitcoin" target="_blank" rel="nofollow">Bitcoin Core</a>
-              since 2019 and
-              <a href="https://github.com/bitcoin/bips" target="_blank" rel="nofollow">BIPs</a>
-              maintainer since 2024, I pursue a long-term, evergreen role of help and
-              service, hopefully with a measure of kindness, wisdom and
-              forbearance.
-            </p>
-            <p>
-              My time is invested in reviewing and context-packing the changes
-              to these projects, observing the process closely, and reading or
-              reviewing most of the opened and merged pull requests.
-            </p>
-            <p>
-              The idea is to help move improvements forward, catch bugs
-              or breaking changes, and be able to help maintain the project.
-              I propose
-              <a href="https://github.com/bitcoin/bitcoin/commits?author=jonatack" target="_blank"
-                rel="nofollow">fixes</a>
-              to the
-              <a href="https://github.com/bitcoin/bitcoin/graphs/contributors" target="_blank" rel="nofollow">code</a>
-              as well.
-            </p>
-            <p>
-              See my <a href="./articles.html" target="_self">articles</a> for more
-              about contributing to and running Bitcoin Core.
-            </p>
-          </div>
+<body class="bg-gray-100 font-sans">
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold">My Personal Website</h1>
+            <div class="space-x-4">
+                <a href="index.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Home</a>
+                <a href="blogs.html" class="text-white hover:bg-blue-700 px-3 py-2 rounded">Blogs</a>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</body>
+    </nav>
 
+    <div class="container mx-auto p-6">
+        <div class="bg-white shadow-md rounded-lg p-8">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <div class="flex items-center">
+                <img src="/api/placeholder/200/200" alt="Profile" class="w-48 h-48 rounded-full mr-6">
+                <div>
+                    <p class="text-gray-700 mb-4">
+                        Hi! I'm a passionate professional who loves technology, creativity, and continuous learning. 
+                        I enjoy solving complex problems and creating innovative solutions that make a difference.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <div class="flex space-x-4">
+                    <a href="https://x.com/hey_yuvic" class="text-blue-500 hover:text-blue-700">
+                        <i class="fab fa-twitter text-3xl"></i>
+                    </a>
+                    <a href="https://github.com/i-am-yuvi" class="text-gray-700 hover:text-gray-900">
+                        <i class="fab fa-github text-3xl"></i>
+                    </a>
+                    <a href="#" class="text-blue-600 hover:text-blue-800">
+                        <i class="fab fa-linkedin text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
